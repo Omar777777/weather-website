@@ -1,0 +1,497 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --nav-center-find-subscribe-color:rgb(30, 32, 43);
+    --links-color: rgb(0, 153, 214);
+
+
+    --currentDay-afterNextDay-hearder-color: rgb(45, 48, 61);
+    --currentDay-afterNextDay-Body-color: rgb(50, 53, 68);
+
+
+    --nextDay-hearder-color: rgb(34, 37, 48);
+    --nextDay-Body-color: rgb(38, 41, 54);
+
+    --days-capitales-degrees-statistics: rgb(191, 193, 200);
+}
+
+
+.fa-bars{
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    font-style: normal;
+    
+}
+.navbar-toggler{
+    border:  2px solid transparent;
+    padding: 12px 9px 10px;
+    border-radius: 40px;
+    transition: all 0.5s;
+
+    &:hover{
+        border: 2px solid var(--links-color);
+    }
+    &:hover .fa-bars{
+        color: var(--links-color);
+
+    }
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+nav{
+    background-color: var(--nav-center-find-subscribe-color);
+
+}
+.text-logo {
+    h1{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    }
+
+    small{
+
+        font-family: "Roboto", serif;
+        font-weight: 300;
+        font-size: 10px;
+        font-style: normal;
+        line-height: 10px;
+    }
+  
+}
+
+
+
+.nav-link{
+
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: normal;
+    color:  white;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    padding: 2px 25px !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--links-color);
+    border: 2px solid var(--links-color);
+}
+
+.active{
+    color: var(--links-color);
+    border: 2px solid var(--links-color);
+}
+
+/* Search input */
+
+.location-search{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 90%;
+}
+
+.form-control{
+    color: #fff;
+    width: 100%;
+    background-color: var(--nav-center-find-subscribe-color);
+    border: 2px solid var(--nav-center-find-subscribe-color);
+    border-radius: 32px;
+    padding: 15px 50px 15px 20px;
+}
+
+.form-control:focus{
+    color: #fff;
+    background-color: var(--nav-center-find-subscribe-color);
+    border: 2px solid var(--nav-center-find-subscribe-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.my-btn{
+    background-color: var(--links-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 40px;
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
+}
+
+/* Cards */
+.currentDay-afterNextDay-card-header{
+    background-color: var(--currentDay-afterNextDay-hearder-color);
+    border-top-left-radius: 15px;
+
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+        color:var(--days-capitales-degrees-statistics);
+    }
+}
+
+.currentDay-afterNextDay-card-body{
+    background-color: var(--currentDay-afterNextDay-Body-color);
+    border-bottom-left-radius: 15px;
+
+    h5{
+        font-family: "Roboto",serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        font-style: normal;
+        color: var(--days-capitales-degrees-statistics);
+    }
+}
+
+.forcaste{
+
+    .forcaste-temp{
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 135px;
+        font-style: normal;
+        color: #fff;
+    }
+
+  
+}
+
+.currentDay-afterNextDay-card-footer{
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+        color: var(--links-color);
+    }
+    span{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+        color: var(--days-capitales-degrees-statistics);
+    }
+}
+
+
+
+
+
+
+
+
+.nextDay-card-header{
+    background-color: var(--nextDay-hearder-color);
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+        color: var(--days-capitales-degrees-statistics);
+        }
+}
+
+.nextDay-card-body{
+    background-color: var(--nextDay-Body-color);
+    height: 370px;
+
+    .nextDay-forcaste-temp {
+        p{
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-size: 24px;
+            font-style: normal;
+            line-height: 36px;
+            color: #fff;
+            margin-bottom: 3px;
+        }
+
+        small{
+            font-family: "Roboto", serif;
+            font-weight: 300;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 24px;
+            color: var(--days-capitales-degrees-statistics);
+        }
+
+    }
+
+           .nextDay-forcaste-status {
+            margin-top: 19px;
+               p {
+                   font-family: "Roboto", serif;
+                   font-weight: 300;
+                   font-size: 14px;
+                   font-style: normal;
+                   line-height: 21px;
+                   color: var(--links-color);
+               }
+           }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dayAfter-nextDay-card-header{
+        border-top-right-radius: 15px;
+    background-color: var(--currentDay-afterNextDay-hearder-color);
+    p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            font-style: normal;
+            color: var(--days-capitales-degrees-statistics);
+        }
+}
+
+
+
+
+
+
+.dayAfter-nextDay-card-body {
+    border-bottom-right-radius: 15px;
+    background-color: var(--currentDay-afterNextDay-Body-color);
+    height: 370px;
+
+    .dayAfter-nextDay-forcaste-temp {
+        p {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-size: 24px;
+            font-style: normal;
+            line-height: 36px;
+            color: #fff;
+            margin-bottom: 3px;
+        }
+
+        small {
+            font-family: "Roboto", serif;
+            font-weight: 300;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 24px;
+            color: var(--days-capitales-degrees-statistics);
+        }
+
+    }
+
+    .dayAfter-nextDay-forcaste-status {
+        margin-top: 19px;
+
+        p {
+            font-family: "Roboto", serif;
+            font-weight: 300;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 21px;
+            color: var(--links-color);
+        }
+    }
+}
+
+.parent-card{
+    width: 90%;
+    margin: auto;
+}
+
+main{
+    background-image: url(../images/banner.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-color: rgb(25, 28, 36);
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--nextDay-Body-color);
+    padding: 15px 0px 50px;
+}
+
+
+
+.social-icones{
+    margin-top: 10px;
+}
+.fa-circle{
+    color: rgb(30, 32, 43);
+
+  
+}
+
+.icon-color{
+    color: var(--links-color);
+
+    
+}
+
+.icone:hover .fa-circle{
+    color: var(--links-color);
+}
+
+.icone:hover .icon-color{
+    color: #fff;
+}
+
+.last-text{
+    font-family: "Roboto",serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    color: var(--days-capitales-degrees-statistics);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+.currentDay-afterNextDay-card-header{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.currentDay-afterNextDay-card-body {
+    border-bottom-left-radius: 0px;
+}
+
+.dayAfter-nextDay-card-body {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.dayAfter-nextDay-card-header {
+    border-top-right-radius: 0px;
+}
+
+
+.navbar-nav{
+    background-color: #262936;
+    li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--links-color);
+    border: 2px solid transparent;
+}
+.active {
+    color: var(--links-color);
+    border: 2px solid transparent;
+}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+
+    .currentDay-afterNextDay-card-body{
+        height: 412.500px;
+    }
+
+    .dayAfter-nextDay-card-body{
+
+        height:412.500px;
+    }
+
+    .nextDay-card-body{
+        height: 412.500px;
+
+    }
+
+   
+
+}
+
+ @media screen and (min-width:1200px) and (max-width:1400px) {
+
+     .currentDay-afterNextDay-card-body {
+        height: 370px;
+     }
+ }

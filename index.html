@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        </head>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-5 pb-5 ps-5">
+        <div class="container">
+            <a class="navbar-brand ms-lg-5 ms-sm-0 text-decoration-none text-white " href="#"><img src="./images/logo.png"
+                    alt="logo">
+                <div class="d-inline-block text-logo align-middle">
+                    <h1>Weather</h1>
+                    <small class="d-block">tagline goes here</small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse mt-lg-0 mt-sm-5  " id="navbarNav">
+                <ul class="navbar-nav ms-lg-auto text-sm-center">
+                    <li class="nav-item pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3">
+                        <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ms-2 pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item ms-2 pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item ms-2 pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item ms-lg-2 me-lg-5 pt-lg-0 pb-lg-0 pt-sm-3 pb-sm-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form class="location-search  position-relative mx-auto">
+                        <input id="searchLocation" type="text" placeholder="Find your Location..." class="form-control mx-auto">
+                        <button class="my-btn">Find</button>
+                    </form>
+                </div>
+
+
+
+                <div class="container pb-5">
+                    <div class="row parent-card">
+                        <div class="col-lg-4 p-0">
+
+                            <div class="current-day">
+
+                                <div
+                                    class="currentDay-afterNextDay-card-header d-flex justify-content-between align-items-center pe-2 ps-2 mx-auto">
+                                    <p id="currentdayName" class="mt-2 mb-2"></p>
+                                    <p class="mt-2 mb-2"><span id="currentdayinmonth"></span><span id="currentmonth"></span></p>
+                                </div>
+
+                                <div class="currentDay-afterNextDay-card-body pb-5 pt-3">
+                                    <h5 id="cityName" class=" ms-3"></h5>
+                                   
+
+                                        <div class="row forcaste flex-column">
+                                            <div class="col-xl-1 forcaste-temp">
+
+                                                    <span id="currenttemp"></span><sup>o</sup>C
+                                            
+                                            </div>
+
+
+                                            <div class="col-xl-5 forcaste-image">
+                                            
+                                                <img id="currentweathericon" alt="weather icon" class="w-50">
+                                            
+                                            
+                                            </div>
+
+
+                                        </div>
+
+
+                                       
+
+                                        
+                                            
+                                    
+
+
+
+
+                                     
+
+
+
+
+
+
+                                    
+                                    <div class="currentDay-afterNextDay-card-footer  ms-3">
+                                        <p id="weatherdesc" class="footer-text"></p>
+                                        <img src="./images/icon-umberella.png" alt="Darknes">
+                                        <span class="me-3">20%</span>
+                                        <img src="./images/icon-wind.png" alt="Wind Speed">
+                                        <span class="me-3">18km/h</span>
+                                        <img src="./images/icon-compass.png" alt="Wind Deriction">
+                                        <span>East</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 p-0">
+
+                            <div class="next-day">
+
+                                <div
+                                    class="nextDay-card-header d-flex justify-content-center align-items-center pe-2 ps-2 mx-auto">
+                                    <p id="nextdayinweek" class="mt-2 mb-2"></p>
+                                </div>
+
+                                <div class="nextDay-card-body overflow-auto pb-5 pt-5">
+                                    <div
+                                        class="nextDay-forcaste d-flex flex-column justify-content-center align-items-center">
+                                        <div class="nexDay-forcaste-image mt-3 mb-3">
+                                            <img id="nextDayWeatherIcon" src="" alt="weather icon">
+                                        </div>
+                                        <div class="nextDay-forcaste-temp">
+                                            <p><span id="nextDayMaxTemp"></span><sup>o</sup>C</p>
+                                            <small class="ms-3"><span id="nextDayMinTemp"></span> <sup>o</sup></small>
+                                        </div>
+                                        <div class="nextDay-forcaste-status">
+                                            <p id="nextDayWeatherStatus"></p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 p-0">
+
+                            <div class="dayAfter-next-day">
+                                <div
+                                    class="dayAfter-nextDay-card-header d-flex justify-content-center align-items-center pe-2 ps-2 mx-auto">
+                                    <p id="afterNextDayInWeek" class="mt-2 mb-2"></p>
+                                </div>
+
+                                <div class="dayAfter-nextDay-card-body overflow-auto pb-5 pt-5">
+                                    <div
+                                        class="dayAfter-nextDay-forcaste d-flex flex-column justify-content-center align-items-center">
+                                        <div class="dayAfter-nexDay-forcaste-image mt-3 mb-3">
+                                            <img id="afterNextDayWeatherIcon" src="" alt="weather icon">
+                                        </div>
+                                        <div class="dayAfter-nextDay-forcaste-temp">
+                                            <p><span id="afterNextDayMaxTemp"></span><sup>o</sup>C</p>
+                                            <small class="ms-3"><span id="afterNextDayMinTemp"></span> <sup>o</sup></small>
+                                        </div>
+                                        <div class="dayAfter-nextDay-forcaste-status">
+                                            <p id="afterNextDayWeatherStatus"></p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form class="location-search  position-relative mx-auto mt-4 mb-3">
+                        <input type="text" placeholder="Enter your email to subscribe..." class="form-control mx-auto">
+                        <button class="my-btn">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center">
+
+
+                    <div class="social-icones ms-5 ">
+                        <a class="fa-stack fa-1x icone" href="#">
+                            <i class="fa-solid fa-circle fa-stack-2x "></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse icon-color"></i>
+                        </a>
+
+                        <a class="fa-stack fa-1x icone" href="#">
+                            <i class="fa-solid fa-circle fa-stack-2x "></i>
+                            <i class="fa-brands fa-twitter fa-stack-1x fa-inverse icon-color"></i>
+                        </a>
+
+                        <a class="fa-stack fa-1x icone" href="#">
+                            <i class="fa-solid fa-circle fa-stack-2x "></i>
+                            <i class="fa fa-google-plus fa-stack-1x fa-inverse icon-color"></i>
+                        </a>
+
+
+                        <a class="fa-stack fa-1x icone" href="#">
+                            <i class="fa-solid fa-circle fa-stack-2x "></i>
+                            <i class="fa-brands fa-pinterest fa-stack-1x fa-inverse icon-color"></i>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <p class="last-text ms-5  mt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+
+        
+
+
+    </footer>
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/HomeScript.js"></script>
+</body>
+
+</html>
